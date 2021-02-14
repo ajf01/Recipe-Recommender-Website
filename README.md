@@ -9,7 +9,8 @@ You can use the [editor on GitHub](https://github.com/ajf01/Recipe-Recommender-W
 <input type="text" id="name" name="name"/>
 
 ```markdown
-
+<field description. Field name autodetected in here> :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !form: Form Header Name
 
 Choose an *email*?:  ______________
@@ -32,7 +33,7 @@ Radio Button. Which *pet* do you want most?:
 * ( ) bird
 
           [>>  OK   <<] [!! RESET !!]
-
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 {action="MAILTO:someone@example.com" method="post" enctype="text/plain"}
 
 New User Questions
