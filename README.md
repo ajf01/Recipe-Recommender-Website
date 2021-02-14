@@ -31,6 +31,12 @@ Cuisine     |Breakfast/Lunch/Dinner  |Ingredients
 Chicken Parmesan|Lunch/Dinner|Chicken,Parmesan,Oil,Pepper,Salt
 
 
+| Priority apples | Second priority | Third priority |
+|-------|--------|---------|
+| ambrosia | gala | red delicious |
+| pink lady | jazz | macintosh |
+| honeycrisp | granny smith | fuji |
+
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
