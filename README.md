@@ -7,11 +7,13 @@ You can use the [editor on GitHub](https://github.com/ajf01/Recipe-Recommender-W
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+New User Questions
 
-# Header 1
-## Header 2
-### Header 3
+**NOTE**
+
+| How much time do you want to spend on cooking? | Any allergies? | What are your favorite dishes? |
+|------------------------------------------------|--------|---------|
+| Chicken Parmesan | Lunch/Dinner | Chicken,Parmesan,Oil,Pepper,Salt |
 
 - Bulleted
 - List
