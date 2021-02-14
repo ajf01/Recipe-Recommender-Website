@@ -26,6 +26,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 Cuisine     |Breakfast/Lunch/Dinner  |Ingredients
+
 ------------|------------------------|-----------
 Chicken Parmesan|Lunch/Dinner|Chicken,Parmesan,Oil,Pepper,Salt
 
