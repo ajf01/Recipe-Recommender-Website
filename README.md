@@ -10,30 +10,30 @@ You can use the [editor on GitHub](https://github.com/ajf01/Recipe-Recommender-W
 
 ```markdown
 <field description. Field name autodetected in here> :
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!form: Form Header Name
+          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+          !form: Form Header Name
 
-Choose an *email*?:  ______________
-Choose a *password*: ***___________
+          Choose an *email*?:  ______________
+          Choose a *password*: ***___________
 
-Describe why you want to register:
-[________________________________]
-[________________________________]{description}
+          Describe why you want to register:
+          [________________________________]
+          [________________________________]{description}
 
-*Gender*: [ "male" / "female" ]
+          *Gender*: [ "male" / "female" ]
 
-Which of these *features* will you need?:
-* [ ] simplicity
-* [ ] Don't know
-* [ ] complete
+          Which of these *features* will you need?:
+          * [ ] simplicity
+          * [ ] Don't know
+          * [ ] complete
 
-Radio Button. Which *pet* do you want most?:
-* ( ) cat
-* ( ) dog
-* ( ) bird
+          Radio Button. Which *pet* do you want most?:
+          * ( ) cat
+          * ( ) dog
+          * ( ) bird
 
-          [>>  OK   <<] [!! RESET !!]
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [>>  OK   <<] [!! RESET !!]
+          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 {action="MAILTO:someone@example.com" method="post" enctype="text/plain"}
 
 New User Questions
