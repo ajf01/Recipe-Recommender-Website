@@ -15,6 +15,7 @@ With our hectic and unpredictable daily schedules, it can be easy to rely on con
 | <input type="text" id="name" name="name"/> |
 
 ### Results
+
 | Cuisine | Breakfast/Lunch/Dinner | Ingredients |
 |-------|--------|---------|
 | Chicken Parmesan | Lunch/Dinner | Chicken,Parmesan,Oil,Pepper,Salt |
