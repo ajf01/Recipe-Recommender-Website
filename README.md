@@ -30,15 +30,16 @@ New User Questions
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-## About
 
 ##### Introduction
-
+With our hectic and unpredictable daily schedules, it can be easy to rely on convenient and unhealthy foods that detriment our health. Or oftentimes, indecisiveness in meal preparation can lead to monotonous and unenjoyable meals. The primary goal of our website is to provide you with recipes that are inspired by your favorite meals, and hopefully we can even suggest some new ones that you would like.
 
 ##### Methods
 
 
 ##### Impact
+
+Food is the perfect gateway to introduce oneself to the variety of cuisines that there are to experience, and cooking recipes is just one way through which we can engage with those cultures that they come from.
 
 
 ## Support or Contact
