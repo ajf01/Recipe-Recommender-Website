@@ -3,32 +3,30 @@
 You can use the [editor on GitHub](https://github.com/ajf01/Recipe-Recommender-Website/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 ### Markdown
+!form: Form Header Name
 
-<field description. Field name autodetected in here> :
-  !form: Form Header Name
+Choose an *email*?:  ______________
+Choose a *password*: ***___________
 
-  Choose an *email*?:  ______________
-  Choose a *password*: ***___________
+Describe why you want to register:
+[________________________________]
+[________________________________]{description}
 
-  Describe why you want to register:
-  [________________________________]
-  [________________________________]{description}
+*Gender*: [ "male" / "female" ]
 
-  *Gender*: [ "male" / "female" ]
+Which of these *features* will you need?:
+* [ ] simplicity
+* [ ] Don't know
+* [ ] complete
 
-  Which of these *features* will you need?:
-  * [X] simplicity
-  * [ ] Don't know
-  * [ ] complete
+Radio Button. Which *pet* do you want most?:
+* ( ) cat
+* ( ) dog
+* ( ) bird
 
-  Radio Button. Which *pet* do you want most?:
-  * (X) cat
-  * ( ) dog
-  * ( ) bird
+          [>>  OK   <<] [!! RESET !!]
 
-            [>>  OK   <<] [!! RESET !!]
-
-  {action="MAILTO:someone@example.com" method="post" enctype="text/plain"}
+{action="MAILTO:someone@example.com" method="post" enctype="text/plain"}
 
 
 <input type="text" id="name" name="name"/>
