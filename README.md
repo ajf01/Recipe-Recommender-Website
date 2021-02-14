@@ -3,6 +3,13 @@
 You can use the [editor on GitHub](https://github.com/ajf01/Recipe-Recommender-Website/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 ### Markdown
+
+
+
+<input type="text" id="name" name="name"/>
+
+```markdown
+
 !form: Form Header Name
 
 Choose an *email*?:  ______________
@@ -28,50 +35,6 @@ Radio Button. Which *pet* do you want most?:
 
 {action="MAILTO:someone@example.com" method="post" enctype="text/plain"}
 
-
-<input type="text" id="name" name="name"/>
-
-
----
-forms:
-  - to: jhvanderschee@gmail.com
-    subject: New submission!
-    redirect: /
-    form_engine: formspree
-    placeholders: false
-    fields: 
-      - name: name
-        input_type: text
-        placeholder: Name
-        required: true
-      - name: email
-        input_type: email
-        placeholder: Email address
-        required: true
-      - name: sex
-        input_type: radio
-        placeholder: male
-        required: true
-      - name: sex
-        input_type: radio
-        placeholder: female
-        required: true
-      - name: message
-        input_type: textarea
-        placeholder: Message
-        required: false
-      - name: terms
-        input_type: checkbox
-        placeholder: I accept the terms and conditions
-        required: true
-      - name: submit
-        input_type: submit
-        placeholder: Submit form
-        required: true
----
-
-
-```markdown
 New User Questions
 
 
