@@ -5,7 +5,6 @@ You can use the [editor on GitHub](https://github.com/ajf01/Recipe-Recommender-W
 ### Markdown
 New User Questions
 
-
 | How much time do you want to spend on cooking? | Any allergies? | What are your favorite dishes? |
 |------------------------------------------------|----------------|--------------------------------|
  <input type="text" id="name" name="name"/>  <input type="text" id="name" name="name"/>  <input type="text" id="name" name="name"/> 
@@ -19,8 +18,6 @@ New User Questions
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-
-![alt text](https://unsplash.com/photos/s-fD5Tpew2k)
 
 | Cuisine | Breakfast/Lunch/Dinner | Ingredients |
 |-------|--------|---------|
