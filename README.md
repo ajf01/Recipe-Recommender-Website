@@ -8,7 +8,7 @@ New User Questions
 
 | How much time do you want to spend on cooking? | Any allergies? | What are your favorite dishes? |
 |------------------------------------------------|----------------|--------------------------------|
-| <input type="text" id="name" name="name"/> | <input type="text" id="name" name="name"/> | <input type="text" id="name" name="name"/> |
+ <input type="text" id="name" name="name"/>  <input type="text" id="name" name="name"/>  <input type="text" id="name" name="name"/> 
 
 - Bulleted
 - List
