@@ -35,7 +35,7 @@ Food is the perfect gateway to introduce oneself to the variety of cuisines that
 
 Having trouble with the recommender? Maybe there is a feature you would like us to add to the website? Contact us at our email or phone number below with your problems or suggestions 
 
-- Email: food4u@gmail.com
+- Email: personalizedPlates@gmail.com
 - Phone: +1-(555)-555-5555
 
 
