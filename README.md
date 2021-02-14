@@ -3,45 +3,13 @@
 You can use the [editor on GitHub](https://github.com/ajf01/Recipe-Recommender-Website/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 ### Markdown
-
-
-
-<input type="text" id="name" name="name"/>
-
 ```markdown
-<field description. Field name autodetected in here> :
-          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-          !form: Form Header Name
-
-          Choose an *email*?:  ______________
-          Choose a *password*: ***___________
-
-          Describe why you want to register:
-          [________________________________]
-          [________________________________]{description}
-
-          *Gender*: [ "male" / "female" ]
-
-          Which of these *features* will you need?:
-          * [ ] simplicity
-          * [ ] Don't know
-          * [ ] complete
-
-          Radio Button. Which *pet* do you want most?:
-          * ( ) cat
-          * ( ) dog
-          * ( ) bird
-
-                    [>>  OK   <<] [!! RESET !!]
-          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-{action="MAILTO:someone@example.com" method="post" enctype="text/plain"}
-
 New User Questions
 
 
 | How much time do you want to spend on cooking? | Any allergies? | What are your favorite dishes? |
-|------------------------------------------------|--------|---------|
-| Chicken Parmesan | Lunch/Dinner | Chicken,Parmesan,Oil,Pepper,Salt |
+|------------------------------------------------|----------------|--------------------------------|
+| <input type="text" id="name" name="name"/> | <input type="text" id="name" name="name"/> | <input type="text" id="name" name="name"/> |
 
 - Bulleted
 - List
@@ -51,7 +19,7 @@ New User Questions
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) and ![Image](https://unsplash.com/photos/s-fD5Tpew2k)
 ```
 
 | Cuisine | Breakfast/Lunch/Dinner | Ingredients |
