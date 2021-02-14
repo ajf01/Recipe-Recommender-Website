@@ -1,19 +1,14 @@
 ## Food-4-U-Recommendations
 
-You can use the [editor on GitHub](https://github.com/ajf01/Recipe-Recommender-Website/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+##### Introduction
+With our hectic and unpredictable daily schedules, it can be easy to rely on convenient and unhealthy foods that detriment our health. Or oftentimes, indecisiveness in meal preparation can lead to monotonous and unenjoyable meals. The primary goal of our website is to provide you with recipes that are inspired by your favorite meals, and hopefully we can even suggest some new ones that you would like.
 
-### Markdown
-New User Questions
+### New Users
 
 | How much time do you want to spend on cooking? | Any allergies? | What are your favorite dishes? |
 |------------------------------------------------|----------------|--------------------------------|
 | <input type="text" id="name" name="name"/> | <input type="text" id="name" name="name"/> | <input type="text" id="name" name="name"/> |
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
 
 **Bold** and _Italic_ and `Code` text
 
@@ -25,11 +20,6 @@ New User Questions
 | Spaghetti | Lunch/Dinner | Spaghetti, Tomato Sauce, Ground Beef, Pepper, Salt |
 | Cereal | Breakfast | Lucky Charms |
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-
-##### Introduction
-With our hectic and unpredictable daily schedules, it can be easy to rely on convenient and unhealthy foods that detriment our health. Or oftentimes, indecisiveness in meal preparation can lead to monotonous and unenjoyable meals. The primary goal of our website is to provide you with recipes that are inspired by your favorite meals, and hopefully we can even suggest some new ones that you would like.
 
 ##### Methods
 
