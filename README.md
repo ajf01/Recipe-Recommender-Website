@@ -27,7 +27,7 @@ Syntax highlighted code block
 ```
 Cuisine     |Breakfast/Lunch/Dinner  |Ingredients
 ------------|------------------------|-----------
-
+Chicken Parmesan|Lunch/Dinner|Chicken,Parmesan,Oil,Pepper,Salt
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
