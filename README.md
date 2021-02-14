@@ -72,16 +72,16 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ## About
 
-### Introduction
+##### Introduction
 
 
-### Methods
+##### Methods
 
 
-### Impact
+##### Impact
 
 
-### Support or Contact
+## Support or Contact
 
 Having trouble with the recommender? Maybe there is a feature you would like us to add to the website? Contact us at our email or phone number below with your problems or suggestions 
 
