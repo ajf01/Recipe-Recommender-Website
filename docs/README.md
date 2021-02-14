@@ -1,18 +1,18 @@
-## Food-4-U-Recommendations
+# Food-4-U-Recommendations
 
-##### Introduction
+### Introduction
 With our hectic and unpredictable daily schedules, it can be easy to rely on convenient and unhealthy foods that detriment our health. Or oftentimes, indecisiveness in meal preparation can lead to monotonous and unenjoyable meals. The primary goal of our website is to provide you with recipes that are inspired by your favorite meals, and hopefully we can even suggest some new ones that you would like.
 
-## New Users
+## The Recommender
+### New Users
 
 | How much time do you want to spend on cooking? | Any allergies? | What are your favorite dishes? |
 |------------------------------------------------|----------------|--------------------------------|
 | <input type="text" id="name" name="name"/> | <input type="text" id="name" name="name"/> | <input type="text" id="name" name="name"/> |
 
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+| Ingredients? |
+|------------------------------------------------|
+| <input type="text" id="name" name="name"/> |
 
 | Cuisine | Breakfast/Lunch/Dinner | Ingredients |
 |-------|--------|---------|
@@ -20,11 +20,11 @@ With our hectic and unpredictable daily schedules, it can be easy to rely on con
 | Spaghetti | Lunch/Dinner | Spaghetti, Tomato Sauce, Ground Beef, Pepper, Salt |
 | Cereal | Breakfast | Lucky Charms |
 
+## About this project
 
-##### Methods
+### Methods
 
-
-##### Impact
+### Impact
 
 Food is the perfect gateway to introduce oneself to the variety of cuisines that there are to experience, and cooking recipes is just one way through which we can engage with those cultures that they come from.
 
@@ -33,5 +33,10 @@ Food is the perfect gateway to introduce oneself to the variety of cuisines that
 
 Having trouble with the recommender? Maybe there is a feature you would like us to add to the website? Contact us at our email or phone number below with your problems or suggestions 
 
-- Email: whataconondrum@gmail.com
-- Phone: +1-(123)-667-9124
+- Email: food4u@gmail.com
+- Phone: +1-(555)-555-5555
+
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
