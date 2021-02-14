@@ -6,7 +6,6 @@ You can use the [editor on GitHub](https://github.com/ajf01/Recipe-Recommender-W
 
 <field description. Field name autodetected in here> :
   !form: Form Header Name
-  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
   Choose an *email*?:  ______________
   Choose a *password*: ***___________
@@ -29,7 +28,6 @@ You can use the [editor on GitHub](https://github.com/ajf01/Recipe-Recommender-W
 
             [>>  OK   <<] [!! RESET !!]
 
-  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   {action="MAILTO:someone@example.com" method="post" enctype="text/plain"}
 
 
