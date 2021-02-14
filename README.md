@@ -6,8 +6,9 @@ You can use the [editor on GitHub](https://github.com/ajf01/Recipe-Recommender-W
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-New User Questions
+
+<input type="text" id="name" name="name"/>
+
 
 ---
 forms:
@@ -46,6 +47,11 @@ forms:
         placeholder: Submit form
         required: true
 ---
+
+
+```markdown
+New User Questions
+
 
 | How much time do you want to spend on cooking? | Any allergies? | What are your favorite dishes? |
 |------------------------------------------------|--------|---------|
