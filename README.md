@@ -25,17 +25,12 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-Cuisine     |Breakfast/Lunch/Dinner  |Ingredients
 
-------------|------------------------|-----------
-Chicken Parmesan|Lunch/Dinner|Chicken,Parmesan,Oil,Pepper,Salt
-
-
-| Priority apples | Second priority | Third priority |
+| Cuisine | Breakfast/Lunch/Dinner | Ingredients |
 |-------|--------|---------|
-| ambrosia | gala | red delicious |
-| pink lady | jazz | macintosh |
-| honeycrisp | granny smith | fuji |
+| Chicken Parmesan | Lunch/Dinner | Chicken,Parmesan,Oil,Pepper,Salt |
+| Spaghetti | Lunch/Dinner | Spaghetti, Tomato Sauce, Ground Beef, Pepper, Salt |
+| Cereal | Breakfast | Lucky Charms |
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
