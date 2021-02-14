@@ -46,3 +46,6 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 ### Support or Contact
 
 Having trouble with the recommender? Maybe there is a feature you would like us to add to the website? Contact us at our email or phone number below with your problems or suggestions 
+
+- Email: whataconondrum@gmail.com
+- Phone: +1-(123)-667-9124
