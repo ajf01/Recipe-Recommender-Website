@@ -3,7 +3,6 @@
 You can use the [editor on GitHub](https://github.com/ajf01/Recipe-Recommender-Website/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 ### Markdown
-```markdown
 New User Questions
 
 
@@ -19,8 +18,9 @@ New User Questions
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](https://unsplash.com/photos/s-fD5Tpew2k)
-```
+[Link](url) and ![Image](src)
+
+![alt text](https://unsplash.com/photos/s-fD5Tpew2k)
 
 | Cuisine | Breakfast/Lunch/Dinner | Ingredients |
 |-------|--------|---------|
