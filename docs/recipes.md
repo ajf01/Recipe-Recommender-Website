@@ -7,7 +7,7 @@
 _[Filet Mignon]()_ | _[Chicken Fried Rice]()_ | _[Seared Ahi Tuna]()_ | _[Beef Stir Fry]()_
 
 ### Categories
-| Air Fryer | Baking | Deep Fried | Grill | Vegetarian | Vegan |
+Air Fryer | Baking | Deep Fried | Grill | Vegetarian | Vegan
 
 ### Results
 
