@@ -1,4 +1,4 @@
-**[Home](https://ajf01.github.io/Recipe-Recommender-Website/)** | **[About](https://ajf01.github.io/Recipe-Recommender-Website/about)**
+**[Home](https://ajf01.github.io/Recipe-Recommender-Website/)** | **[Recipes](https://ajf01.github.io/Recipe-Recommender-Website/)** | **[About](https://ajf01.github.io/Recipe-Recommender-Website/about)**
 
 # About this project
 
@@ -17,6 +17,6 @@ Having trouble with the recommender? Maybe there is a feature you would like us 
 - Phone: +1-(555)-555-5555
 
 
-**Bold** and _Italic_ and `Code` text
+_Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
