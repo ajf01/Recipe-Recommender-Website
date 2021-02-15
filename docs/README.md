@@ -1,5 +1,4 @@
-- [Home](https://ajf01.github.io/Recipe-Recommender-Website/)
-- [About](https://ajf01.github.io/Recipe-Recommender-Website/about)
+**[Home](https://ajf01.github.io/Recipe-Recommender-Website/)** | **[Recipes](https://ajf01.github.io/Recipe-Recommender-Website/recipe)** | **[About](https://ajf01.github.io/Recipe-Recommender-Website/about)**
 
 # Personalized Plates
 
