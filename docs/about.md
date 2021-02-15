@@ -15,8 +15,3 @@ Having trouble with the recommender? Maybe there is a feature you would like us 
 
 - Email: food4u@gmail.com
 - Phone: +1-(555)-555-5555
-
-
-_Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
