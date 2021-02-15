@@ -10,11 +10,11 @@ With our hectic and unpredictable daily schedules, it can be easy to rely on con
 
 | How much time do you want to spend on cooking? | Any allergies? | What are your favorite dishes? |
 |------------------------------------------------|----------------|--------------------------------|
-| <input type="text" id="name" name="name"/> | <input type="text" id="name" name="name"/> | <input type="text" id="name" name="name"/> |
+| <input type="text" id="name" name="name" placeholder="Answer"/> | <input type="text" id="name" name="name" placeholder="Answer"/> | <input type="text" id="name" name="name" placeholder="Answer"/> |
 
 | Ingredients? |
 |------------------------------------------------|
-| <input type="text" id="name" name="name"/> |
+| <input type="text" id="name" name="name" placeholder="Answer"/> |
 
 ### Results
 
