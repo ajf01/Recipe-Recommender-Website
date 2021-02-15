@@ -3,19 +3,11 @@
 # Search
 <input type="text" id="name" name="name" placeholder="Find Recipe"/>
 
-### Introduction
-With our hectic and unpredictable daily schedules, it can be easy to rely on convenient and unhealthy foods that detriment our health. Or oftentimes, indecisiveness in meal preparation can lead to monotonous and unenjoyable meals. Our goal is to generate recipes that are inspired by your favorite meals, and hopefully we can even suggest some new ones that you would like.
+### User Favorites
+_[Filet Mignon]()_ | _[Chicken Fried Rice]()_ | _[Seared Ahi Tuna]()_ | _[Beef Stir Fry]()_
 
-## The Recommender
-### Questions
-
-| How much time do you want to spend on cooking? | Any allergies? | What are your favorite dishes? |
-|------------------------------------------------|----------------|--------------------------------|
-| <input type="text" id="name" name="name"/> | <input type="text" id="name" name="name"/> | <input type="text" id="name" name="name"/> |
-
-| Ingredients? |
-|------------------------------------------------|
-| <input type="text" id="name" name="name"/> |
+### Categories
+| Air Fryer | Baking | Deep Fried | Grill | Vegetarian | Vegan |
 
 ### Results
 
@@ -42,6 +34,5 @@ Having trouble with the recommender? Maybe there is a feature you would like us 
 - Phone: +1-(555)-555-5555
 
 
-_Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+`Code`
+![Image](src)
