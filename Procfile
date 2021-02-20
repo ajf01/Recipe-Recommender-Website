@@ -1,1 +1,1 @@
-web: gunicorn dsc106hw1.html --log-file -
+web: gunicorn wsgi:app --log-file -
