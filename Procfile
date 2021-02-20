@@ -1,1 +1,1 @@
-web: gunicorn app.py --log-file -
+web: gunicorn dsc106hw1.html --log-file -
