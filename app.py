@@ -1,11 +1,23 @@
 import os
 from flask import Flask
+from django.core.wsgi import get_wsgi_application
 
-app = Flask(__name__)
+#app = Flask(__name__)
 
-@app.route('/')
-def hello():
-    return "Hello Dreamforce!"
+#@app.route('/')
+#def hello():
+#    return "Hello Dreamforce!"
 
-if __name__ == "__main__":
-    app.run(debug=True)
+#if __name__ == "__main__":
+#    app.run(debug=True)
+
+"""
+WSGI config for gettingstarted project.
+It exposes the WSGI callable as a module-level variable named ``application``.
+For more information on this file, see
+https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/
+"""
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gettingstarted.settings")
+
+application = get_wsgi_application()
