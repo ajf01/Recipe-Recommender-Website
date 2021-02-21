@@ -6,3 +6,4 @@ gunicorn
 itsdangerous
 django
 django-heroku
+streamlit
