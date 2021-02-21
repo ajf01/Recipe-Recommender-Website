@@ -1,6 +1,6 @@
 import os
 from flask import Flask, render_template
-from flask_sqlalchemy import SQLAlchemy
+#from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
@@ -15,11 +15,11 @@ app = Flask(__name__)
 #    def __repr__(self):
 #        return '<Task %r>' % self.id
 
-@app.route('/', methods=['POST','GET'])
+@app.route('/')#, methods=['POST','GET'])
 def hello():
 #    return "Hello Team!"
-#    return render_template('index.html')
-    return render_template('example.html')
+    return render_template('index.html')
+#    return render_template('example.html')
 
 #if __name__ == "__main__":
 #    app.run(debug=True)
