@@ -44,7 +44,7 @@ def run_rec():
     return 123456789
 
 st.button("Generate my Recipes!")
-if st.button("Generate my Recipes!"):
+if st.button:
     st.write(run_rec())
     st.balloons()
 
