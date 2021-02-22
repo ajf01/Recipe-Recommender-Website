@@ -68,12 +68,10 @@ def run_rec():
     sample['sims'] = sims
     sample['sims_unpacked'] = sample['sims'].apply(lambda x: x[0][0])
 
-    st.table(sample[:10])
+    st.table(sample.sort_values('sims_unpacked',ascending=False)[:10])
     return 123456789
 
 st.button("Generate my Recipes!")
 if st.button:
     st.write(run_rec())
     st.balloons()
-
-#st.table(sample.sort_values('sims_unpacked',ascending=False)[:10])
