@@ -59,26 +59,26 @@ from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-sample = pd.read_csv('sample.csv')
-with open('test_set.data', 'rb') as filehandle:
+#sample = pd.read_csv('sample.csv')
+#with open('test_set.data', 'rb') as filehandle:
     # read the data as binary data stream
-    test = pickle.load(filehandle)
+#    test = pickle.load(filehandle)
 
-mlb = MultiLabelBinarizer()
-mlb.fit(test)
+#mlb = MultiLabelBinarizer()
+#mlb.fit(test)
 
 #User Input
-recipe_test = [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
+#recipe_test = [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
 
-ingredients_transformed = mlb.transform(test)
-recipe_test_trans = mlb.transform(recipe_test)
+#ingredients_transformed = mlb.transform(test)
+#recipe_test_trans = mlb.transform(recipe_test)
 
-sims = []
-for recipe in ingredients_transformed:
-    sim = cosine_similarity(recipe_test_trans,recipe.reshape(-1,78))
-    sims.append(sim)
+#sims = []
+#for recipe in ingredients_transformed:
+#    sim = cosine_similarity(recipe_test_trans,recipe.reshape(-1,78))
+#    sims.append(sim)
 
-sample['sims'] = sims
-sample['sims_unpacked'] = sample['sims'].apply(lambda x: x[0][0])
+#sample['sims'] = sims
+#sample['sims_unpacked'] = sample['sims'].apply(lambda x: x[0][0])
 
-st.table(sample.sort_values('sims_unpacked',ascending=False)[:10])
+#st.table(sample.sort_values('sims_unpacked',ascending=False)[:10])
