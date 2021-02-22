@@ -60,6 +60,14 @@ def run_rec():
     ingredients_transformed = mlb.transform(test)
     recipe_test_trans = mlb.transform(recipe_test)
 
+    sims = []
+    for recipe in ingredients_transformed:
+        sim = cosine_similarity(recipe_test_trans,recipe.reshape(-1,78))
+        sims.append(sim)
+
+    sample['sims'] = sims
+    sample['sims_unpacked'] = sample['sims'].apply(lambda x: x[0][0])
+
     st.table(sample[:10])
     return 123456789
 
@@ -67,13 +75,5 @@ st.button("Generate my Recipes!")
 if st.button:
     st.write(run_rec())
     st.balloons()
-
-#sims = []
-#for recipe in ingredients_transformed:
-#    sim = cosine_similarity(recipe_test_trans,recipe.reshape(-1,78))
-#    sims.append(sim)
-
-#sample['sims'] = sims
-#sample['sims_unpacked'] = sample['sims'].apply(lambda x: x[0][0])
 
 #st.table(sample.sort_values('sims_unpacked',ascending=False)[:10])
