@@ -53,6 +53,7 @@ def run_rec():
 
     mlb = MultiLabelBinarizer()
     mlb.fit(test)
+    st.table(sample[:10])
     return 123456789
 
 st.button("Generate my Recipes!")
