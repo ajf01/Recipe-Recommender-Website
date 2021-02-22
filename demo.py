@@ -1,5 +1,13 @@
 import streamlit as st
 
+import pandas as pd
+import os
+import numpy as np
+import pickle
+
+from sklearn.preprocessing import MultiLabelBinarizer
+from sklearn.metrics.pairwise import cosine_similarity
+
 #sidebars
 st.sidebar.header("About")
 st.sidebar.text("Food is the perfect gateway to introduce oneself to the variety of cuisines that there are to experience, and cooking recipes is just one way through which we can engage with those cultures that they come from.")
@@ -35,12 +43,16 @@ st.checkbox("Fish")
 st.checkbox("Egg")
 
 
-
-
-
 #I think this is where the recommender goes 
 
 def run_rec():
+    sample = pd.read_csv('sample.csv')
+    with open('test_set.data', 'rb') as filehandle:
+    # read the data as binary data stream
+        test = pickle.load(filehandle)
+
+    mlb = MultiLabelBinarizer()
+    mlb.fit(test)
     return 123456789
 
 st.button("Generate my Recipes!")
@@ -50,22 +62,6 @@ if st.button:
 
 
 
-import pandas as pd
-import os
-import numpy as np
-import pickle
-
-from sklearn.preprocessing import MultiLabelBinarizer
-from sklearn.metrics.pairwise import cosine_similarity
-
-
-#sample = pd.read_csv('sample.csv')
-#with open('test_set.data', 'rb') as filehandle:
-    # read the data as binary data stream
-#    test = pickle.load(filehandle)
-
-#mlb = MultiLabelBinarizer()
-#mlb.fit(test)
 
 #User Input
 #recipe_test = [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
