@@ -62,7 +62,7 @@ def run_rec():
 
     sims = []
     for recipe in ingredients_transformed:
-        sim = cosine_similarity(recipe_test_trans,recipe.reshape(-1,78))
+        sim = cosine_similarity(recipe_test_trans,recipe.reshape(-1,1864))
         sims.append(sim)
 
     sample['sims'] = sims
