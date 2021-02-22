@@ -8,6 +8,5 @@ django
 django-heroku
 streamlit
 sklearn
-pickle
 numpy
 pandas
