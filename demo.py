@@ -53,6 +53,13 @@ def run_rec():
 
     mlb = MultiLabelBinarizer()
     mlb.fit(test)
+    
+    #User Input
+    recipe_test = [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
+
+    ingredients_transformed = mlb.transform(test)
+    recipe_test_trans = mlb.transform(recipe_test)
+
     st.table(sample[:10])
     return 123456789
 
@@ -60,15 +67,6 @@ st.button("Generate my Recipes!")
 if st.button:
     st.write(run_rec())
     st.balloons()
-
-
-
-
-#User Input
-#recipe_test = [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
-
-#ingredients_transformed = mlb.transform(test)
-#recipe_test_trans = mlb.transform(recipe_test)
 
 #sims = []
 #for recipe in ingredients_transformed:
