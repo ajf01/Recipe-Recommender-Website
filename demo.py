@@ -57,8 +57,7 @@ def run_rec():
     
     #User Input
     #recipe_test = [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
-    user_input = st.text_input("Ingredients", 'sugar')
-
+    
     if user_input:
         # Turn input into a proper list of lists
         input_vector = [[x.strip() for x in user_input.split(",")]]
@@ -77,11 +76,10 @@ def run_rec():
     st.table(sample.sort_values('sims_unpacked',ascending=False)[:10])
     return
 
+user_input = st.text_input("Ingredients", 'sugar')
 generate = st.button("Generate my Recipes!")
 if generate:
     run_rec()
-    st.write("Slider Level: " + str(level) + "\n"+
-    "Allergies Peanuts: " + str(peanut_allergy)
-    )
+    st.write("Slider Level: " + str(level))
     st.balloons()
 
