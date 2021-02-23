@@ -48,7 +48,7 @@ st.checkbox("Egg")
 
 #I think this is where the recommender goes 
 
-def run_rec(user_input):
+def run_rec(userIn):
     sample = pd.read_csv('sample.csv')
     with open('test_set.data', 'rb') as filehandle:
     # read the data as binary data stream
@@ -60,9 +60,9 @@ def run_rec(user_input):
     #User Input
     #recipe_test = [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
     
-    if user_input:
+    if userIn:
         # Turn input into a proper list of lists
-        input_vector = [[x.strip() for x in user_input.split(",")]]
+        input_vector = [[x.strip().lower() for x in userIn.split(",")]]
     
     ingredients_transformed = mlb.transform(test)
     recipe_test_trans = mlb.transform(input_vector)
