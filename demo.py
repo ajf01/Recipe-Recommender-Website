@@ -10,7 +10,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 #sidebars
 st.sidebar.header("About")
-st.sidebar.text("Food is the perfect gateway to introduce oneself to the variety of cuisines that there are to experience, and cooking recipes is just one way through which we can engage with those cultures that they come from.")
+about_text="Food is the perfect gateway to introduce oneself to the variety of cuisines that there are to experience, and cooking recipes is just one way through which we can engage with those cultures that they come from."
+st.sidebar.markdown(about_text)
 
 st.title("Personalized-Plates")
 
@@ -56,10 +57,14 @@ def run_rec():
     
     #User Input
     #recipe_test = [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
-    recipe_test = st.text_input("Ingredients", 'sugar')
+    user_input = st.text_input("Ingredients", 'sugar')
 
+    if user_input:
+        # Turn input into a proper list of lists
+        input_vector = [[x.strip() for x in user_input.split(",")]]
+    
     ingredients_transformed = mlb.transform(test)
-    recipe_test_trans = mlb.transform([recipe_test.split(', ')])
+    recipe_test_trans = mlb.transform(input_vector)
 
     sims = []
     for recipe in ingredients_transformed:
@@ -70,9 +75,13 @@ def run_rec():
     sample['sims_unpacked'] = sample['sims'].apply(lambda x: x[0][0])
 
     st.table(sample.sort_values('sims_unpacked',ascending=False)[:10])
-    return 123456789
+    return
 
-st.button("Generate my Recipes!")
-if st.button:
-    st.write(run_rec())
+generate = st.button("Generate my Recipes!")
+if generate:
+    run_rec()
+    st.write("Slider Level: " + str(level) + "\n"+
+    "Allergies Peanuts: " + str(peanut_allergy)
+    )
     st.balloons()
+
