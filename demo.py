@@ -33,7 +33,7 @@ cuisines = st.radio("What cuisine are you loooking for?", ("Italian", "Asian", "
 #slider
 level = st.slider("What is your cooking mastery?",1,5)
 
-sortby = st.radio("Sort By", ("Shortest cook time", "Least Calories", "Most Popular"))
+sortby = st.radio("Sort By", ("Shortest cook time", "Longest cook time", "Least Calories", "Most Popular"))
 
 sort_by_selectbox = st.selectbox("Sort By", ["Shortest cook time", "Least Calories", "Most Popular"])
 
@@ -72,8 +72,7 @@ def run_rec(userIn):
         sim = cosine_similarity(recipe_test_trans,recipe.reshape(-1,5333))
         sims.append(sim)
 
-    sample['sims'] = sims
-    sample['sims_unpacked'] = sample['sims'].apply(lambda x: x[0][0])
+    sample['sims_unpacked'] = [x[0][0] for x in sims]
 
     st.table(sample.sort_values('sims_unpacked',ascending=False)[:5])
     return
