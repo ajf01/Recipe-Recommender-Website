@@ -46,7 +46,7 @@ st.checkbox("Egg")
 
 #I think this is where the recommender goes 
 
-def run_rec():
+def run_rec(user_input):
     sample = pd.read_csv('sample.csv')
     with open('test_set.data', 'rb') as filehandle:
     # read the data as binary data stream
@@ -79,7 +79,7 @@ def run_rec():
 user_input = st.text_input("Ingredients", 'sugar')
 generate = st.button("Generate my Recipes!")
 if generate:
-    run_rec()
+    run_rec(user_input)
     st.write("Slider Level: " + str(level))
     st.balloons()
 
