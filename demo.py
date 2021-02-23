@@ -26,15 +26,16 @@ st.header("Recipe Recommender")
 st.write("Select your preferences below and hit generate to get your recipes!")
 
 
+sample = pd.read_csv('sample.csv')
+
 #Widgets
-cuisines = st.radio("What cuisine are you loooking for?", ('greek','southUS','filipino','indian','jamaican','spanish','italian','mexican','chinese','british','thai','vietnamese','cajun_creole','brazilian','french','japanese','irish','korean','moroccan','russian'))
+#cuisines = st.multiselect("What cuisine are you loooking for?", ('greek','southUS','filipino','indian','jamaican','spanish','italian','mexican','chinese','british','thai','vietnamese','cajun_creole','brazilian','french','japanese','irish','korean','moroccan','russian'))
+cuisines = st.multiselect("What cuisine are you loooking for?", (sample['cuisine'].unique()))
 
 #slider
 level = st.slider("What is your cooking mastery?",1,5)
 
 sortby = st.radio("Sort By", ("Shortest cook time", "Least Calories", "Most Popular"))
-
-sort_by_selectbox = st.selectbox("Sort By", ["Shortest cook time", "Least Calories", "Most Popular"])
 
 ingredients = st.multiselect("Ingredients", ("Chicken", "Pasta", "Soy Sauce"))
 st.write("You selected", len(ingredients), "ingredients")
@@ -45,8 +46,7 @@ st.checkbox("Fish")
 st.checkbox("Egg")
 
 #Recommender
-def run_rec(userIn):
-    sample = pd.read_csv('sample.csv')
+def run_rec(userIn,samp):
     with open('test_set.data', 'rb') as filehandle:
     # read the data as binary data stream
         test = pickle.load(filehandle)
@@ -66,19 +66,20 @@ def run_rec(userIn):
         sim = cosine_similarity(recipe_test_trans,recipe.reshape(-1,5333))
         sims.append(sim)
 
-    sample['sims'] = sims
-    sample['sims_unpacked'] = sample['sims'].apply(lambda x: x[0][0])
+    samp['sim'] = [x[0][0] for x in sims]
 
-    return sample.sort_values('sims_unpacked',ascending=False)
+    return samp.sort_values('sim',ascending=False)
 
 user_input = st.text_input("Ingredients")
 generate = st.button("Generate my Recipes!")
 if generate:
     with st.spinner("Asking the head chef..."):
         #Run the recommender here
-        recommendations = run_rec(user_input)
+        recommendations = run_rec(user_input,sample)
     #This sleep is needed because the spinner animation drags on
     time.sleep(0.5)
+    if len(cuisines) > 0:
+        recommendations = recommendations[recommendations['cuisine'].isin(cuisines)]
     st.success("Dinner is served!")
     st.table(recommendations.set_index('name')[:5])
     st.balloons()
