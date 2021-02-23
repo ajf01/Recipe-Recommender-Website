@@ -40,7 +40,7 @@ sort_by_selectbox = st.selectbox("Sort By", ["Shortest cook time", "Least Calori
 ingredients = st.multiselect("Ingredients", ("Chicken", "Pasta", "Soy Sauce"))
 st.write("You selected", len(ingredients), "ingredients")
 
-
+st.write("Select Your Allergies")
 st.checkbox("Peanuts")
 st.checkbox("Fish")
 st.checkbox("Egg")
@@ -75,10 +75,10 @@ def run_rec(user_input):
     sample['sims'] = sims
     sample['sims_unpacked'] = sample['sims'].apply(lambda x: x[0][0])
 
-    st.table(sample.sort_values('sims_unpacked',ascending=False)[:10])
+    st.table(sample.sort_values('sims_unpacked',ascending=False)[:5])
     return
 
-user_input = st.text_input("Ingredients", 'sugar')
+user_input = st.text_input("Ingredients")
 generate = st.button("Generate my Recipes!")
 if generate:
     with st.spinner("Asking the head chef..."):
