@@ -80,7 +80,10 @@ def run_rec(user_input):
 user_input = st.text_input("Ingredients", 'sugar')
 generate = st.button("Generate my Recipes!")
 if generate:
-    run_rec(user_input)
-    st.write("Slider Level: " + str(level))
+    with st.spinner("Asking the head chef..."):
+        #Run the recommender here
+        run_rec(user_input)
+    #This sleep is needed because the spinner animation drags on
+    time.sleep(0.5)
+    st.success("Dinner is served!")
     st.balloons()
-
