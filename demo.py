@@ -55,8 +55,8 @@ def run_rec():
     mlb.fit(test)
     
     #User Input
-    recipe_test = [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
-    #recipe_test = st.text_input("Ingredients", [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']])
+    #recipe_test = [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
+    recipe_test = st.text_input("Ingredients", [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']])
 
     ingredients_transformed = mlb.transform(test)
     recipe_test_trans = mlb.transform(recipe_test)
