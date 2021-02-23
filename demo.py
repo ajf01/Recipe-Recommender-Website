@@ -74,16 +74,16 @@ def run_rec(userIn):
 
     sample['sims_unpacked'] = [x[0][0] for x in sims]
 
-    st.table(sample.sort_values('sims_unpacked',ascending=False)[:5])
-    return
+    return sample.sort_values('sims_unpacked',ascending=False)
 
 user_input = st.text_input("Ingredients")
 generate = st.button("Generate my Recipes!")
 if generate:
     with st.spinner("Asking the head chef..."):
         #Run the recommender here
-        run_rec(user_input)
+        recommendations = run_rec(user_input)
     #This sleep is needed because the spinner animation drags on
     time.sleep(0.5)
     st.success("Dinner is served!")
+    st.table(recommendations.set_index('name')[:5])
     st.balloons()
