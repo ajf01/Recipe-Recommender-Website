@@ -27,7 +27,6 @@ st.write("Select your preferences below and hit generate to get your recipes!")
 
 
 #Widgets
-
 cuisines = st.radio("What cuisine are you loooking for?", ('greek','southUS','filipino','indian','jamaican','spanish','italian','mexican','chinese','british','thai','vietnamese','cajun_creole','brazilian','french','japanese','irish','korean','moroccan','russian'))
 
 #slider
@@ -45,9 +44,7 @@ st.checkbox("Peanuts")
 st.checkbox("Fish")
 st.checkbox("Egg")
 
-
-#I think this is where the recommender goes 
-
+#Recommender
 def run_rec(userIn):
     sample = pd.read_csv('sample.csv')
     with open('test_set.data', 'rb') as filehandle:
@@ -56,9 +53,6 @@ def run_rec(userIn):
 
     mlb = MultiLabelBinarizer()
     mlb.fit(test)
-    
-    #User Input
-    #recipe_test = [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
     
     if userIn:
         # Turn input into a proper list of lists
@@ -74,11 +68,6 @@ def run_rec(userIn):
 
     sample['sims'] = sims
     sample['sims_unpacked'] = sample['sims'].apply(lambda x: x[0][0])
-    
-    
-    
-   ###FILTER
-    #sample = sample.loc[sample.cuisine == cuisine
 
     return sample.sort_values('sims_unpacked',ascending=False)
 
