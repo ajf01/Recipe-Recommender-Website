@@ -56,10 +56,10 @@ def run_rec():
     
     #User Input
     #recipe_test = [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
-    recipe_test = st.text_input("Ingredients", [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']])
+    recipe_test = st.text_input("Ingredients", 'sugar')
 
     ingredients_transformed = mlb.transform(test)
-    recipe_test_trans = mlb.transform(recipe_test)
+    recipe_test_trans = mlb.transform([recipe_test.split(', ')])
 
     sims = []
     for recipe in ingredients_transformed:
