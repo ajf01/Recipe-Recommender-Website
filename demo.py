@@ -14,6 +14,7 @@ about_text="Food is the perfect gateway to introduce oneself to the variety of c
 st.sidebar.markdown(about_text)
 
 st.title("Personalized-Plates")
+st.image("https://www.goya.com/media/4173/creole-spaghetti.jpg?quality=80")
 
 st.header("Introduction")
 st.write("With our hectic and unpredictable daily schedules, it can be easy to rely on convenient and unhealthy foods that detriment our health. Or oftentimes, indecisiveness in meal preparation can lead to monotonous and unenjoyable meals. Our goal is to generate recipes that are inspired by your favorite meals, and hopefully we can even suggest some new ones that you would like.")
@@ -67,7 +68,7 @@ def run_rec(user_input):
 
     sims = []
     for recipe in ingredients_transformed:
-        sim = cosine_similarity(recipe_test_trans,recipe.reshape(-1,1864))
+        sim = cosine_similarity(recipe_test_trans,recipe.reshape(-1,5333))
         sims.append(sim)
 
     sample['sims'] = sims
