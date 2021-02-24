@@ -73,13 +73,13 @@ def run_rec(userIn,samp):
 
 def sort_col(dataset,sortOrder):
     if sortOrder == "Shortest cook time":
-        dataset = dataset.sort_values(by=['minutes'])
+        dataset = dataset.sort_values(by=['minutes'], ascending = True)
     elif sortOrder == "Least Calories":
-        dataset = dataset.sort_values(by=['calories'])
+        dataset = dataset.sort_values(by=['calories'], ascending = True)
     elif sortOrder == "Number of Ingredients":
-        dataset = dataset.sort_values(by=['n_ingredients'])
+        dataset = dataset.sort_values(by=['n_ingredients'], ascending = True)
     elif sortOrder == "Most Popular":
-        dataset = dataset.sort_values(by=['mean_rating'])
+        dataset = dataset.sort_values(by=['mean_rating'], ascending = False)
     return dataset
 
 user_input = st.text_input("Ingredients")
@@ -94,8 +94,7 @@ if generate:
         if len(cuisines) > 0:
             recommendations = recommendations[recommendations['cuisine'].isin(cuisines)]
         recommendations = recommendations.set_index('name')[:5]
-        if sortby:
-            recommendations = sort_col(recommendations,sortby)
+        recommendations = sort_col(recommendations,sortby)
         st.success("Dinner is served!")
         st.table(recommendations)
         st.balloons()
