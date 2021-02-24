@@ -82,7 +82,7 @@ def sort_col(dataset,sortOrder):
         dataset = dataset.sort_values(by=['mean_rating'], ascending = False)
     return dataset
 
-user_input = st.text_input("Ingredients")
+user_input = st.text_input("Ingredients (pasta, meatballs,...)")
 generate = st.button("Generate my Recipes!")
 if generate:
     if user_input:
