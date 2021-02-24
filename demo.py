@@ -34,7 +34,8 @@ cuisines = st.multiselect("What cuisine are you loooking for?", (sample['cuisine
 
 #slider
 #level = st.slider("What is your cooking mastery?",1,5)
-level = st.slider("What is the longest time you want to spend cooking?",1,65)
+#level = st.slider("What is the longest time you want to spend cooking?",1,65)
+dura = st.radio("What is the longest time you want to spend cooking?", ("No Preference", "30 Minutes Or Less", "1 Hour Or Less", "2 Hours Or Less"))
 
 sortby = st.radio("Sort By", ("None", "Shortest cook time", "Least Calories", "Number of Ingredients", "Most Popular"))
 
@@ -82,6 +83,15 @@ def sort_col(dataset,sortOrder):
         dataset = dataset.sort_values(by=['mean_rating'], ascending = False)
     return dataset
 
+def filter_time(dataset,duration):
+    if duration == "30 Minutes Or Less":
+        dataset = dataset[dataset['minutes'] <= 30]
+    elif duration == "1 Hour Or Less":
+        dataset = dataset[dataset['minutes'] <= 60]
+    elif duration == "2 Hours Or Less":
+        dataset = dataset[dataset['minutes'] <= 120]
+    return dataset
+
 user_input = st.text_input("Ingredients")
 generate = st.button("Generate my Recipes!")
 if generate:
@@ -93,6 +103,7 @@ if generate:
         time.sleep(0.5)
         if len(cuisines) > 0:
             recommendations = recommendations[recommendations['cuisine'].isin(cuisines)]
+        recommendations = filter_time(recommendations, dura)
         recommendations = recommendations.set_index('name')[:5]
         recommendations = sort_col(recommendations,sortby)
         st.success("Dinner is served!")
