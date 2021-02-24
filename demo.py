@@ -33,7 +33,8 @@ sample = pd.read_csv('sample.csv')
 cuisines = st.multiselect("What cuisine are you loooking for?", (sample['cuisine'].unique()))
 
 #slider
-level = st.slider("What is your cooking mastery?",1,5)
+#level = st.slider("What is your cooking mastery?",1,5)
+level = st.slider("What is the longest time you want to spend cooking?",1,65)
 
 sortby = st.radio("Sort By", ("None", "Shortest cook time", "Least Calories", "Number of Ingredients", "Most Popular"))
 
