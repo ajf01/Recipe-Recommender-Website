@@ -35,7 +35,7 @@ cuisines = st.multiselect("What cuisine are you loooking for?", (sample['cuisine
 #slider
 level = st.slider("What is your cooking mastery?",1,5)
 
-sortby = st.selectbox("Sort By", ("", "Shortest cook time", "Least Calories", "Number of Ingredients", "Most Popular"))
+sortby = st.radio("Sort By", ("None", "Shortest cook time", "Least Calories", "Number of Ingredients", "Most Popular"))
 
 #ingredients = st.multiselect("Ingredients", ("Chicken", "Pasta", "Soy Sauce"))
 #st.write("You selected", len(ingredients), "ingredients")
@@ -63,7 +63,7 @@ def run_rec(userIn,samp):
 
     sims = []
     for recipe in ingredients_transformed:
-        sim = cosine_similarity(recipe_test_trans,recipe.reshape(-1,5333))
+        sim = cosine_similarity(recipe_test_trans,recipe.reshape(-1,len(recipe)))
         sims.append(sim)
 
     samp['sim'] = [x[0][0] for x in sims]
@@ -101,5 +101,5 @@ if generate:
     else:
         errorM = st.empty()
         errorM.error('Please Enter Ingredients Into The Search Field!')
-        time.sleep(0.5)
+        time.sleep(0.7)
         errorM.empty()
