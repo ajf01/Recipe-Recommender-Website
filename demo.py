@@ -35,7 +35,7 @@ cuisines = st.multiselect("What cuisine are you loooking for?", (sample['cuisine
 #slider
 level = st.slider("What is your cooking mastery?",1,5)
 
-sortby = st.radio("Sort By", ("Shortest cook time", "Least Calories", "Most Popular"))
+sortby = st.radio("Sort By", ("Shortest cook time", "Number of Ingredients", "Most Popular"))
 
 ingredients = st.multiselect("Ingredients", ("Chicken", "Pasta", "Soy Sauce"))
 st.write("You selected", len(ingredients), "ingredients")
@@ -70,16 +70,34 @@ def run_rec(userIn,samp):
 
     return samp.sort_values('sim',ascending=False)
 
+def sort_col(dataset,sortOrder):
+    if sortOrder == "Shortest cook time":
+        dataset = dataset.sort_values(by=['minutes'])
+    elif sortOrder == "Number of Ingredients":
+        dataset = dataset.sort_values(by=['n_ingredients'])
+    elif sortOrder == "Most Popular":
+        dataset = dataset.sort_values(by=['mean_rating'])
+    return dataset
+
 user_input = st.text_input("Ingredients")
 generate = st.button("Generate my Recipes!")
 if generate:
-    with st.spinner("Asking the head chef..."):
-        #Run the recommender here
-        recommendations = run_rec(user_input,sample)
-    #This sleep is needed because the spinner animation drags on
-    time.sleep(0.5)
-    if len(cuisines) > 0:
-        recommendations = recommendations[recommendations['cuisine'].isin(cuisines)]
-    st.success("Dinner is served!")
-    st.table(recommendations.set_index('name')[:5])
-    st.balloons()
+    if user_input:
+        with st.spinner("Asking the head chef..."):
+            #Run the recommender here
+            recommendations = run_rec(user_input,sample)
+        #This sleep is needed because the spinner animation drags on
+        time.sleep(0.5)
+        if len(cuisines) > 0:
+            recommendations = recommendations[recommendations['cuisine'].isin(cuisines)]
+        recommendations = recommendations.set_index('name')[:5]
+        if sortby:
+            recommendations = sort_col(recommendations,sortby)
+        st.success("Dinner is served!")
+        st.table(recommendations)
+        st.balloons()
+    else:
+        errorM = st.empty()
+        errorM.error('Please Enter Ingredients Into The Search Field!')
+        time.sleep(0.5)
+        errorM.empty()
