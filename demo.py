@@ -35,15 +35,15 @@ cuisines = st.multiselect("What cuisine are you loooking for?", (sample['cuisine
 #slider
 level = st.slider("What is your cooking mastery?",1,5)
 
-sortby = st.radio("Sort By", ("Shortest cook time", "Number of Ingredients", "Most Popular"))
+sortby = st.selectbox("Sort By", ("", "Shortest cook time", "Least Calories", "Number of Ingredients", "Most Popular"))
 
-ingredients = st.multiselect("Ingredients", ("Chicken", "Pasta", "Soy Sauce"))
-st.write("You selected", len(ingredients), "ingredients")
+#ingredients = st.multiselect("Ingredients", ("Chicken", "Pasta", "Soy Sauce"))
+#st.write("You selected", len(ingredients), "ingredients")
 
-st.write("Select Your Allergies")
-st.checkbox("Peanuts")
-st.checkbox("Fish")
-st.checkbox("Egg")
+#st.write("Select Your Allergies")
+#st.checkbox("Peanuts")
+#st.checkbox("Fish")
+#st.checkbox("Egg")
 
 #Recommender
 def run_rec(userIn,samp):
@@ -73,6 +73,8 @@ def run_rec(userIn,samp):
 def sort_col(dataset,sortOrder):
     if sortOrder == "Shortest cook time":
         dataset = dataset.sort_values(by=['minutes'])
+    elif sortOrder == "Least Calories":
+        dataset = dataset.sort_values(by=['calories'])
     elif sortOrder == "Number of Ingredients":
         dataset = dataset.sort_values(by=['n_ingredients'])
     elif sortOrder == "Most Popular":
