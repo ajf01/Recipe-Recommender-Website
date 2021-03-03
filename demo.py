@@ -104,12 +104,12 @@ if generate:
         if len(cuisines) > 0:
             recommendations = recommendations[recommendations['cuisine'].isin(cuisines)]
         recommendations = filter_time(recommendations, dura)
+        recommendations = sort_col(recommendations,sortby)
         recommendations['name'] = recommendations['name'].str.capitalize()
         recommendations = recommendations.set_index('name').drop(columns=['sim'])
         recommendations['cuisine'] = recommendations['cuisine'].str.capitalize()
         recommendations = recommendations.rename(columns={'minutes': 'Minutes','ingredients': 'Ingredients','n_ingredients': '# Ingredients','calories': 'Calories','mean_rating': 'Mean Rating','cuisine': 'Cuisine'})[:5]
         recommendations = recommendations.round(1)
-        recommendations = sort_col(recommendations,sortby)
         st.success("Dinner is served!")
         st.table(recommendations)
         st.balloons()
