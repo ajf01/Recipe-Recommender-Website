@@ -1,4 +1,4 @@
-# Personalized Plates
-Website Link: https://ajf01.github.io/Recipe-Recommender-Website/
+# Plates4U
+Checkpoint Website Link: https://ajf01.github.io/Recipe-Recommender-Website/
 
-Heroku Website Link: https://recipe-rec-app.herokuapp.com/
+Final Website Link: https://recipe-rec-app.herokuapp.com/
