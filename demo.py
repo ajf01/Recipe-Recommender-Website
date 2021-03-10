@@ -46,7 +46,7 @@ dura = st.radio("What is the longest time you want to spend cooking?", ("No Pref
 sortby = st.radio("Sort By", ("None", "Shortest cook time", "Least Calories", "Number of Ingredients", "Most Popular"))
 
 # Widget for user to input number of recommendations to display
-num_recs = st.number_input('How many recommendations would you like?', min_value =1, max_value = 30, value = 5)
+num_recs = st.number_input('How many recommendations would you like?', min_value =1, max_value = 15, value = 5)
 
 # Widget for user to input ingredients
 user_input = st.text_input("Ingredients")
