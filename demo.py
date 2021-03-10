@@ -14,7 +14,7 @@ st.sidebar.header("About")
 about_text="Food is the perfect gateway to introduce yourself to the variety of cuisines that there are to experience, and cooking recipes is one way that we can engage with the cultures that they come from."
 st.sidebar.markdown(about_text)
 
-st.title("Personalized-Plates")
+st.title("Plates4U")
 st.image("https://www.goya.com/media/4173/creole-spaghetti.jpg?quality=80")
 
 st.header("Introduction")
